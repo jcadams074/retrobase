@@ -4,15 +4,15 @@ import ConsoleCard from './components/ConsoleCard';
 import { FlatList } from 'react-native-gesture-handler';
 
 const data = [
-    {id: 'atari_2600'},
-    {id: 'nes'},
-    {id: 'genesis'},
-    {id: 'snes'}, 
-    {id: 'n64'},
-    {id: 'ps1'},
-    {id: 'ps2'},
-    {id: 'gamecube'},
-    {id: 'ps3'},
+    {id: 'atari_2600', title: 'Atari 2600'},
+    {id: 'nes', title: 'Nintendo Entertainment System'},
+    {id: 'genesis', title: 'Sega Genesis'},
+    {id: 'snes', title: 'Super Nintendo Entertainment System'}, 
+    {id: 'n64', title: 'Nintendo 64'},
+    {id: 'ps1', title: 'Playstation'},
+    {id: 'ps2', title: 'Playstation 2'},
+    {id: 'gamecube', title: 'Nintendo Gamecube'},
+    {id: 'ps3', title: 'Playstation 3'},
 ]
    
 export default function ConsolesIndexScreen(){
@@ -30,6 +30,8 @@ export default function ConsolesIndexScreen(){
 
 const styles = StyleSheet.create({
     container:{
-       
+       alignItems: 'center',
+       justifyContent:'space-around', 
+       backgroundColor:'#ECD4C8'
     }
 });

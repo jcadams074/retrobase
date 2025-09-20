@@ -1,12 +1,16 @@
 import React from 'react';
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 
-const ConsoleCard = ({title, imgSrc}) =>{
+type props = {
+    title: string
+}
+
+const ConsoleCard = (props: props) =>{
     return(
         <View style={styles.container}>
             <Pressable>
-                <Image source={imgSrc} style={styles.image}></Image>
-                <Text style={styles.title}>{title}</Text>
+                <Text style={styles.title}>IMAGE</Text>
+                <Text style={styles.title}>{props.title}</Text>
             </Pressable>
         </View>
     );
@@ -14,14 +18,13 @@ const ConsoleCard = ({title, imgSrc}) =>{
 
 const styles = StyleSheet.create({
     container:{
-        width: 170,
-        height: 170,
+        width: 150,
+        height: 150,
         flexDirection:'column', 
         justifyContent:'flex-end',
-        borderColor: 'black', 
-        borderWidth: 1, 
         borderRadius: 25, 
-        margin: 10
+        margin: 20,
+        backgroundColor:'#FFF'
     }, 
     title:{
         textAlign: 'center', 
